@@ -1,0 +1,8 @@
+#!/bin/bash
+
+
+TASK=" Task Completed!!! "
+
+TEXT="\e[35m${TASK}"
+
+echo -e "${TEXT}"

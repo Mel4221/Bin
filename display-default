@@ -1,0 +1,5 @@
+#!/bin/bash
+
+
+gnome-control-center display
+

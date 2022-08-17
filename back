@@ -1,0 +1,14 @@
+#!/bin/bash
+
+
+
+
+
+
+ls -lt
+
+
+#regular for loop with input argument
+#for ((i = 0 ; i <= ${@} ; i++)); do
+ #   		cd ..
+#done

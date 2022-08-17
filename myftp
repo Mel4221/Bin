@@ -1,0 +1,24 @@
+#!/bin/bash
+
+ftp_site=18.219.52.178:22
+username=admin
+passwd=Dmelqui20181
+
+PS3='\Tools\'
+
+# bash select
+select path in '/home/mel/Documents/csharp/ConsoleNotes/bin/Release'
+do
+ftp -in <<EOF
+open $ftp_site
+user $username$passwd
+cd $path
+put $1
+close 
+bye
+EOF
+echo$1 uploaded to $path ! 
+
+# Break, otherwise endless loop
+break
+done

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#notify-send "This is Working"
+
+#name=${who}
+#echo $name
+sudo shutdown 0
+
