@@ -70,16 +70,10 @@ sleep 2s; #small wait
 #REMOVE TEMPORAL FILES 
 sudo apt autoremove
 echo "=======================================================";
-echo "=============   Temporal Files Deleted   =============="; 
+echo "======   Temporal Files From APT Deleted =============="; 
 echo "=======================================================";
 sleep 2s; #small wait 
 
-#SNAP UPDATE FILES
-sudo snap refresh 
-echo "=======================================================";
-echo "==================== Snaps Updated  ==================="; 
-echo "=======================================================";
-sleep 2s; #small wait 
 
 #APTITUDE UPDATE APPS
 sudo aptitude update
@@ -87,6 +81,17 @@ echo "=======================================================";
 echo "==================  Aptitude Update   =================";
 echo "======================================================="; 
 sleep 2s; #small wait
+
+#Deleting All Temporal Files
+echo "=======================================================";
+echo "========== Deleting All Temporal files ================";
+echo "=======================================================";
+
+sleep 5s; #small wait befor
+sudo rm -r /var/tmp/*
+
+
+
 
 TASK="Task Completed!!!"
 

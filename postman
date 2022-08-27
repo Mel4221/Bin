@@ -1,0 +1,5 @@
+#!/bin/bash
+
+
+/usr/local/lib/Postman/app/./postman &
+^C

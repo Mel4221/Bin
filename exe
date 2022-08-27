@@ -3,9 +3,15 @@
 
 #this find the .exe file in the current directory 
 #and set it's value to the variable FILE
+
+
+	
+
+
 FILE=$(find *.exe)
 #This set the FILE as an executable file
 sudo chmod a+x $FILE
 #and this execute the file 
 ./$FILE
+
 
