@@ -1,0 +1,6 @@
+#!/bin/bash
+
+
+PATH=$PWD
+
+echo $PATH > /home/mel/Documents/cache/cache-dir

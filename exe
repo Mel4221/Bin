@@ -7,11 +7,10 @@
 
 	
 
+sudo echo $PWD > /home/mel/Documents/cache/cache-dir
 
 FILE=$(find *.exe)
 #This set the FILE as an executable file
 sudo chmod a+x $FILE
 #and this execute the file 
-./$FILE
-
-
+./$FILE $@

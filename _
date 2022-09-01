@@ -87,7 +87,7 @@ echo "=======================================================";
 echo "========== Deleting All Temporal files ================";
 echo "=======================================================";
 
-sleep 5s; #small wait befor
+sleep 4s; #small wait befor
 sudo rm -r /var/tmp/*
 
 

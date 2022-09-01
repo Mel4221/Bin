@@ -1,0 +1,7 @@
+#!/bin/bash
+
+
+ 
+VALUE=$(</home/mel/Documents/cache/cache-dir)
+
+echo $VALUE
