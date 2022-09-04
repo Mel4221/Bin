@@ -1,0 +1,24 @@
+#!/bin/bash
+
+
+
+
+sudo apt update
+sudo apt -t experimental install $@
+
+
+say "Good_Luck"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
