@@ -4,5 +4,5 @@
 git pull 
 git add -A
 git commit
-git config --global credential.helper store
+#git config --global credential.helper store
 git push
