@@ -1,0 +1,18 @@
+#!/bin/bash
+
+
+sudo $@
+
+file=/home/mel/Documents/cache/last-event
+
+if [[ ! -f $file ]]
+then
+   sudo touch $file
+fi
+
+
+sudo echo "Done" >> $file
+sudo shutdown 0
+
+
+

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+
+
+mono /usr/local/lib/chat/chat.exe $@
+
+
+
+
