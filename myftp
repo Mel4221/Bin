@@ -1,8 +1,8 @@
 #!/bin/bash
 
-ftp_site=18.219.52.178:22
-username=admin
-passwd=Dmelqui20181
+ftp_site=$1
+username=$2
+passwd=$3
 
 PS3='\Tools\'
 

@@ -1,9 +1,8 @@
 #!/bin/bash
 
-#this script 
-#updates everything needeeded to 
-#to use Debian 11 on any matchine 
-
+#this script has been created by Melquiceded B.V
+#and it updates everything needeeded
+#on Debian 11
 
 sudo apt update
 sudo apt upgrade
@@ -21,50 +20,95 @@ sudo apt upgrade
 #sudo apt install firmware-linux firmware-linux-nonfree libdrm-amdgpu1 xserver-xorg-video-amdgpu
 
 
+#install aptitude
 sudo apt install aptitude
-
-sudo apt install firmware-linux firmware-linux-nonfree libdrm-amdgpu1 xserver-xorg-video-amdgpu
-
-
-sudo apt install mesa-vulkan-drivers libvulkan1 vulkan-tools vulkan-validationlayers
-
-
-
-sudo apt install build-essential dkms linux-headers-$(uname -r)
-
-
-sudo apt install ttf-mscorefonts-installer rar unrar libavcodec-extra gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi
-
-sudo apt install fonts-crosextra-carlito fonts-crosextra-caladea
-
-
-
-sudo apt install ufw
-sudo ufw enable
-
-sudo apt install tlp
-
-
-sudo apt install synaptic
-
-sudo apt install build-essential dkms linux-headers-$(uname -r)
-
-
-
-sudo apt install mesa-vulkan-drivers libvulkan1 vulkan-tools vulkan-utils vulkan-validationlayers
-
-
-sudo apt install mesa-opencl-icd
-
-
-
-sudo apt install ttf-mscorefonts-installer rar unrar libavcodec-extra gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi
-
-
-
-sudo apt install vlc
-
-sudo apt install chrome-gnome-shell
+#install none free for amd GPU
+sudo apt install firmware-linux firmware-linux-nonfree libdrm-amdgpu1 xserver-xorg-video-amdgpu -y
+#Vulkan Drivers
+sudo apt install mesa-vulkan-drivers libvulkan1 vulkan-tools vulkan-validationlayers -y
+#linux headers
+sudo apt install build-essential dkms linux-headers-$(uname -r) -y 
+#fonts from microsoft
+sudo apt install ttf-mscorefonts-installer rar unrar libavcodec-extra gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi -y 
+#more fonts
+sudo apt install fonts-crosextra-carlito fonts-crosextra-caladea -y 
+#install firewall
+sudo apt install ufw -y 
+sudo ufw enable #activate the firewall 
+#power manager for laptop 
+sudo apt install tlp -y 
+#package manager synapti 
+sudo apt install synapti -y
+#Mesa drivers for GPU
+sudo apt install mesa-opencl-icd -y
+#install vlc media player
+sudo apt install vlc -y
+#install gnome shell 
+sudo apt install chrome-gnome-shell -y
+#install wifi drivers 
+sudo apt install firmware-iwlwifi firmware-atheros firmware-realtek firmware-linux-nonfree -y
+#display a nice logo of the distro
+sudo apt install neofetch -y 
+#helps to view files in the terminal
+sudo apt install ranger -y
+#install a voice reader for the terminal 
+sudo apt install espeak-ng/stable -y
+#helps when you delete files to be able to restore them 
+sudo apt install trash-cli/stable -y
+#ftp client 
+sudo apt install lftp -y 
+#man variant to
+sudo apt install tldr -y 
 
 
-sudo apt install firmware-iwlwifi firmware-atheros firmware-realtek firmware-linux-nonfree
+#games 
+
+#pacman
+sudo apt install pacman4console -y 
+#snake
+sudo apt install nsnake -y 
+#space 
+sudo apt install ninvaders -y 
+#tetrix
+sudo apt install bastet -y 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
