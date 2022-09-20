@@ -2,7 +2,7 @@
 
 
 
-mono /usr/local/lib/chat/chat.exe $@
+sudo mono /usr/local/lib/chat/chat.exe $@
 
 
 
