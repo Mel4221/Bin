@@ -1,0 +1,9 @@
+#!/bin/bash
+
+msg=$@
+while :
+do
+	Say $msg
+	sleep 2
+
+done
