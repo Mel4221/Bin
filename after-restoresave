@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo "Remember to update the UUID from the new  swap partition at: /etc/fstab"
+update-initramfs -u

@@ -1,0 +1,105 @@
+#!/bin/bash
+
+
+
+#----------------------------------------
+#-------------First  Class---------------
+#----------------------------------------
+
+
+#this is a makes a file an executable one 
+#chmod  +x  fileName.txt : this will make one executable 
+#chmod a+x fileName.txt : this will make it executb
+
+
+
+
+
+
+#sudo touch file.txt; 
+#sudo touch file.pdf 
+#sudo touch file.doc
+#sudo touch file.html
+#sudo touch file.xml 
+
+#clear; 
+#ls -ll; 
+
+
+#sudo rm file.txt;
+#sudo rm file.pdf; 
+#sudo rm file.doc; 
+#sudo rm file.html;
+#sudo rm file.xml; 
+
+#ls -ll;
+#echo 'Created at'; date; 
+
+#--------------------------------------
+#-------------Second Class-------------
+#--------------------------------------
+
+
+
+
+
+#var  = "text"; 
+
+#echo $var; 
+
+
+
+#ls -l ; 
+#echo 'Done';
+
+
+#UPDATING APPS FROM APT
+sudo apt update;
+sudo apt upgrade; 
+echo "=======================================================";
+echo "=================== Apps Updated ======================"; 
+echo "======================================================="; 
+sleep 2s; #small wait
+
+#UPGRADING APPS FROM APT 
+sudo apt upgrade; 
+echo "=======================================================";
+echo "===============      Apt Upgrated        =============="; 
+echo "======================================================="; 
+sleep 2s; #small wait
+
+#REMOVE TEMPORAL FILES 
+sudo apt autoremove -y
+echo "=======================================================";
+echo "======   Temporal Files From APT Deleted =============="; 
+echo "=======================================================";
+sleep 2s; #small wait 
+
+
+#APTITUDE UPDATE APPS
+sudo aptitude update
+echo "=======================================================";
+echo "==================  Aptitude Update   =================";
+echo "======================================================="; 
+sleep 2s; #small wait
+
+#Deleting All Temporal Files
+echo "=======================================================";
+echo "========== Deleting All Temporal files ================";
+echo "=======================================================";
+
+sleep 4s; #small wait befor
+sudo rm -r /var/tmp/*
+
+
+
+
+TASK="Task Completed!!!"
+
+TEXT="\e[35m${TASK}"
+name=$(whoami)
+	notify-send "Hey!!! $name all Repositories has been check for updates"
+
+
+echo -e "${TEXT}"
+echo -e "\e[0m"

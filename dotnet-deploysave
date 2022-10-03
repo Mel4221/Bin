@@ -1,0 +1,10 @@
+#!/bin/bash
+
+
+
+dotnet publish -c Release --self-contained -r win-x86
+echo "Done";
+
+
+
+
