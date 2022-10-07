@@ -1,0 +1,18 @@
+#!/bin/bash
+
+
+sh=/usr/local/bin/$1
+path=/usr/local/bin/
+
+if [[ -f $sh ]] 
+then
+	echo "The Bash "$1 "Was changed to" $2
+	mv $sh $path$2	
+else
+	echo "not such a bash was founded "$1
+
+fi
+
+
+
+
