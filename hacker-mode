@@ -1,0 +1,8 @@
+#!/bin/bash
+
+
+mono /usr/local/lib/FakeHackerScreen/FakeHackerScreen.exe $@ 
+
+
+
+
