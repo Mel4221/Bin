@@ -3,6 +3,6 @@
 
 
 
-FILE=$(find *.py)
+FILE=$@
 
 python3 $FILE

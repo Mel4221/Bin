@@ -1,3 +1,20 @@
 #!/bin/bash
 
+<<<<<<< HEAD
 mono /usr/local/lib/chat/chat.exe $@ 
+=======
+
+
+
+
+
+
+
+mono /usr/local/lib/chat/chat.exe $@
+
+
+
+
+
+
+>>>>>>> c53fc1282160752843809f76c3c82909a078ed91

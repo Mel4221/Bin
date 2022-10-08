@@ -1,0 +1,8 @@
+#!/bin/bash
+
+
+
+touch ~/talk-voice
+echo "$@" > ~/talk-voice
+
+speak-ng -f ~/talk-voice
