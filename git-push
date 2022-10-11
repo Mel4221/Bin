@@ -1,11 +1,11 @@
 #!/bin/bash
 
 echo "Setting Merge as default Git Action"
-sudo git config pull.rebase false  # merge (the default strategy)
-sudo git pull
-sudo git add -A
-sudo git commit -a
-sudo git push
+git config pull.rebase false  # merge (the default strategy)
+git pull
+git add -A
+git commit -a
+git push
 
 Say "The Git Push , Has Been Completed , Sucessfully"
 
