@@ -1,0 +1,10 @@
+#!/bin/bash
+
+
+
+
+
+
+inxi -G
+
+xrandr --listproviders
