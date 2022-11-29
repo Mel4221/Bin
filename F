@@ -1,0 +1,13 @@
+#!/bin/bash
+
+
+
+
+
+run(){
+       value="This Content"	
+	
+}
+
+run
+
