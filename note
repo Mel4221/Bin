@@ -1,6 +1,7 @@
 #!/bin/bash
 
 #this is to go to the file where the program is located 
+<<<<<<< HEAD
 cd /usr/local/lib/notes-sys/;
 #this is
 <<<<<<< HEAD
@@ -8,4 +9,8 @@ mono ConsoleNotes.exe;
 =======
 mono ./ConsoleNotes.exe;
 >>>>>>> d6264aac29cf26be504c479f823d2a0f9997808a
+=======
+cd ~/Documents/
+mono /usr/local/lib/notes-sys/ConsoleNotes.exe
+>>>>>>> e809034c0812648a0a1a37ff12af3905d12798ce
 

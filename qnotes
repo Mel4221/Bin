@@ -1,0 +1,28 @@
+#!/bin/bash
+
+
+
+#save the notes
+if [ $1 = "S" ]
+then
+	echo "Saved Sucessfully"
+	#echo $(date) >>  ~/Documents/QuickNotes.txt
+	echo $@ >> ~/Documents/QuickNotes.txt
+fi
+
+
+#read the notes
+if [ $1 = "read" ]
+then
+	cat ~/Documents/QuickNotes.txt
+fi
+
+#clear the notes
+if [ $1 = "clear" ]
+then
+	
+	echo "" > ~/Documents/QuickNotes.txt
+	echo "Clear Sucessfully"
+fi
+
+
