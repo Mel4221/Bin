@@ -1,0 +1,75 @@
+#!/bin/bash
+
+
+#checking cpu info
+echo "Checking CPU"
+egrep -c '(vmx|svm)' /proc/cpuinfo
+
+
+
+
+
+#full instalation
+sudo apt install qemu-kvm qemu-system qemu-utils python3 python3-pip libvirt-clients libvirt-daemon-system bridge-utils virtinst libvirt-daemon virt-manager -y
+
+
+
+virsh net-undefine default
+virsh net-destroy default
+virsh net-list
+systemctl enable --now libvirtd
+systemctl enable virtlogd.socket
+systemctl restart libvirtd.service
+cat default.xml
+virsh net-define default.xml
+virsh net-autostart default
+virsh net-start default
+
+
+
+
+
+sudo systemctl status libvirtd.service
+
+
+sudo virsh net-start default
+
+
+sudo virsh net-autostart default
+
+
+sudo virsh net-list --all
+
+
+
+
+#setting user as an authroized user to avoid all the time to be loging in 
+sudo usermod -aG libvirt $(whoami)
+sudo usermod -aG libvirt-qemu $(whoami)
+sudo usermod -aG kvm $(whoami)
+sudo usermod -aG input $(whoami)
+sudo usermod -aG disk $(whoami)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

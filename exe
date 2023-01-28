@@ -5,12 +5,22 @@
 #and set it's value to the variable FILE
 
 
-	
-
+	#saving direcotry where this was called 
 sudo echo $PWD > /home/mel/Documents/cache/cache-dir
+	
+if [[ $@ == "" ]]
+then
 
 FILE=$(find *.exe)
 #This set the FILE as an executable file
 sudo chmod a+x $FILE
 #and this execute the file 
 ./$FILE $@
+
+else
+
+
+FILE=$@
+sudo chmod a+x $FILE 
+mono $FILE
+fi

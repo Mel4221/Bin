@@ -1,5 +1,6 @@
 #!/bin/bash
-
+#Say is just an script  that works as a shurctut for  the speak-ng program which talks
+#And on this way what it does is just read the data sved on a single file and it just say it 
 
 
 touch ~/talk-voice

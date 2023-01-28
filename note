@@ -3,5 +3,9 @@
 #this is to go to the file where the program is located 
 cd /usr/local/lib/notes-sys/;
 #this is
+<<<<<<< HEAD
 mono ConsoleNotes.exe;
+=======
+mono ./ConsoleNotes.exe;
+>>>>>>> d6264aac29cf26be504c479f823d2a0f9997808a
 
