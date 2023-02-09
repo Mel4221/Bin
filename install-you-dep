@@ -1,0 +1,15 @@
+#!/bin/bash
+
+sudo apt install pip 
+
+
+pip install pytube
+
+pip install regex
+
+pip install validators
+
+pip install moviepy
+
+
+
