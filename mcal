@@ -1,5 +1,5 @@
 #!/bin/bash
 
-mono /usr/local/lib/cal/calcon.exe $@
+mono ~/Apps/mcal/MCal.exe $@
 
 
