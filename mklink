@@ -1,0 +1,15 @@
+#!/bin/bash
+
+
+DIR=/home/$(whoami)/.local/share/applications/$@-link.desktop
+
+
+echo "
+[Desktop Entry]
+Type=Application
+Name=the-file-name
+Exec=exe-file
+StartupNotify=true
+Icon=icon-path" > $DIR
+
+vim $DIR

@@ -3,7 +3,7 @@
 
 
 
-echo ~/Documents/csharp/QScript/bin/Debug/
+echo ~/Documents/csharp/QTLScript/bin/Debug/
 
 
 

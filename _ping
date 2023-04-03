@@ -5,10 +5,8 @@
 while :
 do
 	ping $@
-
-done 
-
-
+	sleep 1
+done
 
 
 
