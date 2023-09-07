@@ -73,6 +73,9 @@ sudo apt install ninvaders -y
 sudo apt install bastet -y 
 
 
+#Media
+echo "installing variaty"
+sudo apt install variety
 
 
 
