@@ -21,7 +21,7 @@ sudo touch $FILE;
 sudo printf $TAG > $FILE;
 
 #This will make the file executable 
-sudo chmod a+x $FILE;
+sudo chmod 777 $FILE;
 
 #lastly this can be changed depending of your editor 
 #i like vim because im trying to learn how to use it 

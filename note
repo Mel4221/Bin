@@ -1,6 +1,9 @@
 #!/bin/bash
 
 #this is to go to the file where the program is located 
+
+gedit $@
+x="
 <<<<<<< HEAD
 cd /usr/local/lib/notes-sys/
 =======
@@ -16,5 +19,6 @@ mono ./ConsoleNotes.exe;
 cd ~/Documents/
 >>>>>>> cfe9b89e5f4b46a7ab8906886be4d2f88ca2c06e
 mono /usr/local/lib/notes-sys/ConsoleNotes.exe
->>>>>>> e809034c0812648a0a1a37ff12af3905d12798ce
-
+>>>>>>> e809034c081I
+"
+x=""

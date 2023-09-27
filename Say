@@ -3,7 +3,8 @@
 #And on this way what it does is just read the data sved on a single file and it just say it 
 
 
-touch ~/talk-voice
-echo "$@" > ~/talk-voice
+mkdir ~/.logs;
+touch ~/.logs/talk-voice
+echo "$@" > ~/.logs/talk-voice
 
-speak-ng -f ~/talk-voice
+speak-ng -f ~/.logs/talk-voice

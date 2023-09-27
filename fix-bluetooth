@@ -1,0 +1,6 @@
+#!/bin/bash
+
+echo "Open this file:"
+echo "/etc/bluetooth/input.conf"; 
+echo "Uncomment this line: "; 
+echo "UserspaceHID=true"; 
