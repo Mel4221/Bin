@@ -100,7 +100,9 @@ echo "Htop install"
 sleep 1
 sudo apt install htop
 
-
+echo "Notification Lib"; 
+sleep 1 
+sudo apt install libnotify-bin
 
 
 
