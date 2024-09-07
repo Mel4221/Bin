@@ -1,8 +1,4 @@
 #!/bin/bash
 
-
-
-
-
-
 sudo vim /etc/rc.local
+sudo chmod a+x /etc/rc.local

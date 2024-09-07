@@ -55,7 +55,7 @@
 
 #UPDATING APPS FROM APT
 sudo apt update;
-sudo apt upgrade; 
+sudo apt upgrade -y; 
 echo "=======================================================";
 echo "=================== Apps Updated ======================"; 
 echo "======================================================="; 
@@ -77,7 +77,7 @@ sleep 2s; #small wait
 
 
 #APTITUDE UPDATE APPS
-sudo aptitude update
+sudo aptitude update -y;
 echo "=======================================================";
 echo "==================  Aptitude Update   =================";
 echo "======================================================="; 

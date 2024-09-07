@@ -1,0 +1,3 @@
+#!/bin/bash
+
+mono /home/mel/Documents/csharp/ClownShell/bin/Release/ClownShell.exe $@

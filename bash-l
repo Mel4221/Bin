@@ -1,7 +1,6 @@
 #!/bin/bash
 
-ls "/usr/local/bin/"
-
+ls /usr/local/bin/
 
 
 

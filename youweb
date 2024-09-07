@@ -1,0 +1,2 @@
+#!/bin/bash
+~/Documents/csharp/Youweb/bin/Debug/net7.0/./Youweb.dll & open http://localhost:5000 & echo "Done!!!"

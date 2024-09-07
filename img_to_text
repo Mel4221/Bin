@@ -1,0 +1,4 @@
+#!/bin/bash
+#tesseract input out lang
+print pink 'tesseract coolSpanishFile coolSpanishFileText spa'
+tesseract $1 $2 $3

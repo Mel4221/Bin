@@ -1,0 +1,7 @@
+#!/bin/bash
+sudo usermod -aG libvirt $1
+sudo usermod -aG libvirt-qemu $1
+sudo usermod -aG kvm $1
+sudo usermod -aG input $1
+sudo usermod -aG disk $1
+print pink 'Done!!!'

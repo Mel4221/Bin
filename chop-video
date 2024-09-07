@@ -1,0 +1,5 @@
+#!/bin/bash
+print pink 'ffmpeg -i input_file.mp4 -ss 00:03:12 -t 00:00:35 out_file.mp4 -loglevel error -stats'
+
+ffmpeg -i $1 -ss $2 -t $3 $4 -loglevel error -stats
+#ffmpeg -i input_file.mp4 -ss 00:03:12 -t 00:00:35 out_file.mp4 -loglevel error -stats
