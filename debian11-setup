@@ -57,6 +57,8 @@ sudo apt install espeak-ng/stable -y
 sudo apt install trash-cli/stable -y
 #ftp client 
 sudo apt install lftp -y 
+#ftp client 
+sudo apt install ftp -y 
 #man variant to
 sudo apt install tldr -y 
 
@@ -108,9 +110,17 @@ echo "Installing FTP Demon"
 sleep 1
 sudo apt install vsftpd -y
 
+echo "Installing VIM"
+sleep 1
+sudo apt install vim -y
 
+echo "Installing gedit"
+sleep 1
+sudo apt install gedit -y
 
-
+echo "Installing ScreenShot Tool"
+sleep 1
+sudo apt install gnome-screenshot -y
 
 
 
