@@ -123,6 +123,9 @@ sleep 1
 sudo apt install gnome-screenshot -y
 
 
+echo "Installing prints a tree of the files path"
+sleep 1
+sudo apt install tree -y
 
 
 

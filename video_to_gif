@@ -1,0 +1,3 @@
+#!/bin/bash
+print pink 'ffmpeg -i ms.mp4 -vf "fps=10,scale=320:-1:flags=lanczos" -c:v gif output.gif'
+ffmpeg -i $1 -vf "fps=10,scale=320:-1:flags=lanczos" -c:v gif $2

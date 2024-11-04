@@ -1,0 +1,16 @@
+#!/bin/bash
+sudo echo '<VirtualHost *:80>
+    ServerName debian
+
+    ProxyPass / #http://localhost:5269 example
+    ProxyPassReverse / #http://localhost:5269 example
+
+    ProxyPreserveHost On
+    RequestHeader set X-Forwarded-For %{REMOTE_ADDR}s
+    RequestHeader set X-Forwarded-Proto http
+</VirtualHost>' > /etc/apache2/sites-available/$1.conf
+
+sudo nano /etc/apache2/sites-available/$1.conf
+sudo a2ensite $1.conf
+sudo apachectl configtest
+

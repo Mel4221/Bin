@@ -1,0 +1,5 @@
+#!/bin/bash
+print yellow 'optional-> convert -density 300 input.pdf output.png'
+
+convert -density 300 -background white $1 -flatten $2
+
