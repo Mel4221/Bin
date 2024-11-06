@@ -1,0 +1,45 @@
+#!/bin/bash
+
+# Check if the correct number of arguments is provided
+if [ $# -ne 1 ]; then
+  echo "Usage: $0 <service-name>"
+  exit 1
+fi
+
+# Assign the service name from the argument
+SERVICE_NAME=$1
+
+# Define the path to the systemd service file
+SERVICE_FILE="/etc/systemd/system/$SERVICE_NAME.service"
+
+# Check if the service file exists
+if [ ! -f "$SERVICE_FILE" ]; then
+  echo "Error: The service '$SERVICE_NAME' does not exist."
+  exit 2
+fi
+
+# Stop the service if it's running
+echo "Stopping the service: $SERVICE_NAME"
+sudo systemctl stop $SERVICE_NAME
+
+# Disable the service to prevent it from starting on boot
+echo "Disabling the service: $SERVICE_NAME"
+sudo systemctl disable $SERVICE_NAME
+
+# Remove the systemd service file
+echo "Removing the service file: $SERVICE_FILE"
+sudo rm $SERVICE_FILE
+
+# Reload systemd to recognize the changes
+echo "Reloading systemd..."
+sudo systemctl daemon-reload
+
+# Optionally, you can mask the service to prevent it from being started again
+# sudo systemctl mask $SERVICE_NAME
+
+# Check the status of the service (should show "not-found")
+echo "Checking service status..."
+sudo systemctl status $SERVICE_NAME || echo "$SERVICE_NAME has been removed."
+
+echo "Daemon '$SERVICE_NAME' has been successfully deleted."
+
