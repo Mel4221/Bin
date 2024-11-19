@@ -1,0 +1,2 @@
+#!/bin/bash
+mono /home/mel/Documents/csharp/CNotify/CNotify/CNotify/bin/Release/CNotify.exe
