@@ -4,7 +4,11 @@
 
 
 
+<<<<<<< HEAD
 sudo nano /etc/default/grub
+=======
+sudo gedit /etc/default/grub
+>>>>>>> e7dbcbc8d209cfdd0849c7ef42c2b82a71066a4f
 sudo update-grub
 say "Completed-Sucessfully"
 

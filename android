@@ -1,2 +1,6 @@
 #!/bin/bash
+<<<<<<< HEAD
 sudo /usr/local/lib/android-studio/bin/./studio.sh
+=======
+/usr/local/lib/android-studio/bin/./studio.sh
+>>>>>>> e7dbcbc8d209cfdd0849c7ef42c2b82a71066a4f

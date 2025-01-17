@@ -1,3 +1,7 @@
 #!/bin/bash
 
+<<<<<<< HEAD
 mono /home/mel/Documents/csharp/ClownShell/bin/Release/ClownShell.exe $@
+=======
+/home/mel/Documents/csharp/ClownShell/bin/Release/ClownShell $@
+>>>>>>> e7dbcbc8d209cfdd0849c7ef42c2b82a71066a4f

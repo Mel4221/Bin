@@ -89,7 +89,8 @@ echo "========== Deleting All Temporal files ================";
 echo "=======================================================";
 
 sleep 4s; #small wait befor
-sudo rm -r /var/tmp/*
+sudo rm -rvf /var/tmp/*
+sudo rm -rvf /tmp/*
 
 
 

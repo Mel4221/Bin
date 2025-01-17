@@ -21,7 +21,7 @@ sudo apt upgrade
 
 
 #install aptitude
-sudo apt install aptitude
+sudo apt install aptitude -y
 #install none free for amd GPU
 sudo apt install firmware-linux firmware-linux-nonfree libdrm-amdgpu1 xserver-xorg-video-amdgpu -y
 #Vulkan Drivers
@@ -57,6 +57,8 @@ sudo apt install espeak-ng/stable -y
 sudo apt install trash-cli/stable -y
 #ftp client 
 sudo apt install lftp -y 
+#ftp client 
+sudo apt install ftp -y 
 #man variant to
 sudo apt install tldr -y 
 
@@ -76,7 +78,7 @@ sudo apt install bastet -y
 #Media
 echo "installing variaty"
 sleep 1
-sudo apt install variety
+sudo apt install variety -y
 
 
 echo "Installing Wine"
@@ -86,29 +88,44 @@ sudo mkdir -pm755 /etc/apt/keyrings
 sudo wget -O /etc/apt/keyrings/winehq-archive.key https://dl.winehq.org/wine-builds/winehq.key
 sudo wget -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/debian/dists/bullseye/winehq-bullseye.sources
 sudo apt update
-sudo apt install --install-recommends winehq-stable
+sudo apt install --install-recommends winehq-stable -y
 
 echo "installing ink"
 sleep 1
-sudo apt install inkscape
+sudo apt install inkscape -y
 
 echo "installing obs-studio"
 sleep 1
-sudo apt install obs-studio
+sudo apt install obs-studio -y
 
 echo "Htop install"
 sleep 1
-sudo apt install htop
+sudo apt install htop -y
 
 echo "Notification Lib"; 
 sleep 1 
-sudo apt install libnotify-bin
+sudo apt install libnotify-bin -y
+
+echo "Installing FTP Demon"
+sleep 1
+sudo apt install vsftpd -y
+
+echo "Installing VIM"
+sleep 1
+sudo apt install vim -y
+
+echo "Installing gedit"
+sleep 1
+sudo apt install gedit -y
+
+echo "Installing ScreenShot Tool"
+sleep 1
+sudo apt install gnome-screenshot -y
 
 
-
-
-
-
+echo "Installing prints a tree of the files path"
+sleep 1
+sudo apt install tree -y
 
 
 
