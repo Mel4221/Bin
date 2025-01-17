@@ -1,11 +1,2 @@
 #!/bin/bash
-
-
-
-
-
-/usr/local/lib/INAV/./inav-configurator
-
-
-
-
+sudo /opt/inav/inav-configurator/./inav-configurator

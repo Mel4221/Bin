@@ -1,0 +1,5 @@
+#!/bin/bash
+
+print pink 'wget --ftp-user=user --ftp-password=psd ftp://ip/*'
+
+wget --ftp-user=$1 --ftp-password=$2 ftp://$3

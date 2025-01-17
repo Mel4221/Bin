@@ -4,7 +4,7 @@
 
 
 
-sudo vim  /etc/default/grub
+sudo nano /etc/default/grub
 sudo update-grub
 say "Completed-Sucessfully"
 

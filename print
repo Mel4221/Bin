@@ -1,0 +1,42 @@
+#!/bin/bash
+
+# Define color codes
+COLORS=(
+  "red:91"
+  "green:92"
+  "yellow:93"
+  "blue:94"
+  "pink:95"
+  "cyan:96"
+  "white:97"
+)
+
+# Function to get the color code
+get_color_code() {
+  local color=$1
+  for color_pair in "${COLORS[@]}"; do
+    IFS=":" read -r name code <<< "$color_pair"
+    if [ "$name" == "$color" ]; then
+      echo "$code"
+      return
+    fi
+  done
+  echo "37"  # Default to white if color is not found
+}
+
+# Check if the correct number of arguments are passed
+if [ "$#" -ne 2 ]; then
+  echo "Usage: $0 <color> <text>"
+  exit 1
+fi
+
+# Assign arguments to variables
+COLOR=$1
+TEXT=$2
+
+# Get the color code
+COLOR_CODE=$(get_color_code "$COLOR")
+
+# Print the text with the specified color
+printf "\033[%sm%s\033[0m\n" "$COLOR_CODE" "$TEXT"
+

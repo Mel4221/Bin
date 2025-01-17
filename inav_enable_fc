@@ -1,0 +1,4 @@
+#!/bin/bash
+FC=/dev/ttyACM0
+if [ -e $FC ]; then sudo chmod 766 $FC; fi
+sleep 2

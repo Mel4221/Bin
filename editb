@@ -1,0 +1,10 @@
+#!/bin/bash
+
+TMP=/tmp/$@
+FILE=/usr/local/bin/$@
+
+cat $FILE > $TMP
+
+sudo nano $TMP
+sudo chmod a+x $TMP
+sudo mv $TMP $FILE

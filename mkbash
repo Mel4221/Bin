@@ -5,19 +5,22 @@
 #and to put them automatically in your bin folder plus making it 
 #executable 
 
-#Variables Declaration 
+#Variables Declaration
+TMP=/tmp/$@ 
 FILE=/usr/local/bin/$@
 TAG="#!/bin/bash"
 
 #Create The file in the bin with the name passed as an argument 
-sudo touch $FILE;
+sudo touch $TMP;
 
 #This will introduce the HasBang to the file
-sudo printf $TAG > $FILE;
+
 
 #This will make the file executable 
-sudo chmod 777 $FILE;
+sudo echo $TAG > $TMP;
 
 #lastly this can be changed depending of your editor 
 #i like vim because im trying to learn how to use it 
-sudo vim $FILE
+sudo nano $TMP
+sudo chmod a+x $TMP
+sudo mv $TMP $FILE

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+sudo echo "[device]
+wifi.scan-rand-mac-address=no" >> /etc/NetworkManager/NetworkManager.conf
+sudo service NetworkManager restart
