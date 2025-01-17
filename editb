@@ -1,6 +1,5 @@
 #!/bin/bash
 
-<<<<<<< HEAD
 TMP=/tmp/$@
 FILE=/usr/local/bin/$@
 
@@ -9,6 +8,3 @@ cat $FILE > $TMP
 sudo nano $TMP
 sudo chmod a+x $TMP
 sudo mv $TMP $FILE
-=======
-sudo gedit /usr/local/bin/$@
->>>>>>> e7dbcbc8d209cfdd0849c7ef42c2b82a71066a4f

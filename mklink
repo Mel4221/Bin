@@ -12,4 +12,4 @@ Exec=exe-file
 StartupNotify=true
 Icon=icon-path" > $DIR
 
-vim $DIR
+nano $DIR

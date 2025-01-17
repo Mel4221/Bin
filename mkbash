@@ -21,10 +21,7 @@ sudo echo $TAG > $TMP;
 
 #lastly this can be changed depending of your editor 
 #i like vim because im trying to learn how to use it 
-<<<<<<< HEAD
+
 sudo nano $TMP
 sudo chmod a+x $TMP
 sudo mv $TMP $FILE
-=======
-sudo gedit $FILE
->>>>>>> e7dbcbc8d209cfdd0849c7ef42c2b82a71066a4f

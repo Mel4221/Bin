@@ -1,7 +1,4 @@
 #!/bin/bash
 
-<<<<<<< HEAD
 sudo rsync -aP $@
-=======
-rsync -aP $@
->>>>>>> e7dbcbc8d209cfdd0849c7ef42c2b82a71066a4f
+

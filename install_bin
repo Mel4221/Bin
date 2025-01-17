@@ -1,0 +1,3 @@
+#!/bin/bash
+
+sudo cp -rvf ../bin/* /usr/local/bin/
